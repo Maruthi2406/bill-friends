@@ -13,12 +13,16 @@ function addList(friend) {
   setFriends((friends)=>[...friends,friend]);
 }
 
+function onBillPaid(billDetails) {
+  console.log(billDetails);
+
+}
 
   return (
     <div className='container'>
       <AddFriends friends={friends}/>
       <FriendsList addList={addList}/>
-      <BillShare friends={friends}/>
+      <BillShare friends={friends} onBillPaid={onBillPaid}/>
     </div>
   );
 }

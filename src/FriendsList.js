@@ -8,7 +8,7 @@ export default function FriendsList ({addList}){
     function onAddFriend (e)
     {
         e.preventDefault();  // stop page reload (auto)
-        const friend ={name, id:crypto.randomUUID(), billDetails:[]};
+        const friend ={name, id: Date.now(), billDetails:[]};
         addList(friend);
         setName("");
 

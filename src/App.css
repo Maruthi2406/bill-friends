@@ -40,6 +40,12 @@ form label {
   display: block;
 }
 
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 input[type="text"] {
   width: 150px;      /* narrower width */
   height: 30px;      /* reduce height */
