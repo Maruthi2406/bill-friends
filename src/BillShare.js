@@ -13,6 +13,8 @@ function submitBill(e) {
     const singleFriend = friends.find((fr) => +friend === +fr.id);
     console.log(friend);
     console.log(singleFriend); 
+    const billDetails = { friendId: friend, name: singleFriend.name, bill };
+    onBillPaid(billDetails);
    
 }
 
